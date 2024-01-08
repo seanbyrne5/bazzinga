@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Bazinga</title>
+</head>
+<body>
+  <div class="flex-column main-container">
+    <!-- Title block -->
+  <section class="title-block flex-row">
+    <ul>
+      <li>Rock<i class="fa-solid fa-hand-back-fist"></i></li>
+      <li>Paper<i class="fa-solid fa-hand"></i></li>
+      <li>Scissors<i class="fa-solid fa-hand-scissors"></i></li>
+      <li>Lizard<i class="fa-solid fa-hand-lizard"></i></li>
+      <li>Spock<i class="fa-solid fa-hand-spock"></i></li>
+    </ul>
+    <div class="score flex-column">
+      <div class="score-title">Score</div>
+      <div class="score-count"></div>
+    </div>
+  </section>
+
+  <!-- User choice -->
+  <section class="user-choice">
+    <div class="game-card scissors"><img src="assets/images/icon-scissors.svg" alt=""></div>
+    <div class="game-card paper"><img src="assets/images/icon-paper.svg" alt=""></div>
+    <div class="game-card rock"><img src="assets/images/icon-rock.svg" alt=""></div>
+    <div class="game-card lizard"><img src="assets/images/icon-lizard.svg" alt=""></div>
+    <div class="game-card spock"><img src="assets/images/icon-spock.svg" alt=""></div>
+  </section>
+
+  <div class="section picked flex-row hidden">
+    <div class="choice flex-column">
+      <p>You picked</p>
+      <div class="user-pick"></div>
+    </div>
+    <div class="result">
+      <div class="title">You lose</div>
+      <button>Play again</button>
+    </div>   
+    <div class="choice flex-column">
+      <p>The house picked</p>
+      <div class="pc-pick"></div>
+    </div> 
+  </div>
+
+  <button class="rules-btn">Rules</button> 
+  <div class="modal-bg"></div>
+  <div class="modal">
+    <span class="close">
+      <img src="assets/images/icon-close.svg" alt="">
+    </span>
+    <div class="title">Rules</div>
+    <div class="content">
+      <img src="assets/images/image-rules-bonus.svg" alt="">
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/8f4d07cb3e.js" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
