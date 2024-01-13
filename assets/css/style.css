@@ -1,7 +1,7 @@
+/* Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
 /* General Styles*/
-
 * {
     box-sizing: border-box;
 }
@@ -37,15 +37,15 @@ body {
     align-items: center;
     min-height: 100vh;
     position: relative;
-    background: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background: radial-gradient(circle at top, hsl(214, 64%, 58%), hsl(237, 49%, 15%));
 }
 
 .main-container {
     align-items: center;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.quip { font-size: 11px; text-align: center; }
+.quip a { color: hsl(228, 45%, 44%); }
 
 .flex-row {
     display: flex;
@@ -61,7 +61,7 @@ body {
     display: none !important;
 }
 
- /* Title block */
+ /* Title Section */
 
  .title-block {
      justify-content: space-between;
@@ -105,7 +105,7 @@ body {
     font-weight: 700;
  }
 
- /* User Choice */
+ /* User choice */
 
  .user-choice {
      background: center / contain no-repeat url(../images/bg-pentagon.svg);
@@ -138,7 +138,7 @@ body {
      width: 115px;
      height: 115px;
      border-radius: 50%;
-     box-shadow: inset 0 3px 5px hsl(229, 25%, 31%);
+     box-shadow: inset 0 3px 5px hsl(228, 42%, 70%);
      background: rgba(255, 255, 255, 1);
      position: absolute;
      z-index: 1;
@@ -165,7 +165,7 @@ body {
 }
 
 .game-card.rock {
-    background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    background: linear-gradient(hsl(349, 71%, 52%), hsl(350, 39%, 21%));
     box-shadow: 0px 6px 0px 0px hsl(343, 70%, 30%);
     bottom: 0;
     right: 178px;
@@ -179,17 +179,17 @@ body {
 }
 
 .game-card.spock {
-    background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    background: linear-gradient(hsl(189, 59%, 53%), hsl(188, 94%, 50%));
     box-shadow: 0px 6px 0px 0px hsl(197, 54%, 36%);
     top: 130px;
     left: 115px;
 }
 
-/* Picked Section */
+/* Picked section */
 
 .picked {
     align-items: center;
-    justify-contsent: space-between;
+    justify-content: space-between;
     width: 100%;
     text-align: center;
     padding: 30px 10px;
@@ -222,7 +222,7 @@ body {
     align-items: center;
 }
 
-/* Result Block */
+/* Result Section */
 
 .result {
     white-space: nowrap;
@@ -254,7 +254,7 @@ body {
 }
 
  /* Modal Section */
-
+ 
  .modal.active, .modal-bg.active {
      display: block;
  }
@@ -320,7 +320,14 @@ body {
     text-align: center;
 }
 
-
+.quip {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
+/* Media Query Section */
 
 @media only screen and (max-width: 1366px) {
     
