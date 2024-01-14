@@ -1,7 +1,4 @@
 function game() {
-
-    // Declared Variables Section 
-
     const actions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const userWinResults = ['scissorspaper', 'paperrock', 'rocklizard', 'lizardspock', 'spockscissors',
     'rockscissors', 'scissorslizard', 'lizardpaper', 'paperspock', 'spockrock'];
@@ -18,7 +15,6 @@ function game() {
     let currentScore = null;
 
     window.addEventListener('load', () => {
-        
         retrieveScoreFromLocalStorage();
     
         document.querySelectorAll('.user-choice .game-card').forEach(card => {
@@ -33,6 +29,7 @@ function game() {
         resultElement.querySelector('button').addEventListener('click', tryAgain);
     
     })
+    
     function startGame() {
         calculateWinner(userChoice, compChoice);
         userChoiceElement.classList.add('hidden');
@@ -79,7 +76,7 @@ function game() {
             pcPickElement.append(el);
         }
     }
-    
+
     function tryAgain() {
         userChoiceElement.classList.remove('hidden');
         pickedElement.classList.add('hidden');
@@ -101,13 +98,12 @@ function game() {
         updateScoreBoard();
     }
 
-    // adds score to scoreboard
     function updateScoreBoard() {
         scoreCountElement.innerText = currentScore;
         window.localStorage.setItem('gameScore', currentScore);
     }
 
-    // Built modal section as advised by mentor
+    // Modal
     const rulesBtn = document.querySelector('.rules-btn');
     const modalBg = document.querySelector('.modal-bg');
     const modal = document.querySelector('.modal');
