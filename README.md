@@ -44,7 +44,7 @@ From the source section drop-down menu, select the Master Branch
 - The live link can be found here - https://seanbyrne5.github.io/bazzinga/
 
 ## Bugs
-
+ I have encountered a number of bugs on this project I was mostly able to fix these bugs as i progressed though my project. 
 
 ### Unfixed Bugs
 
