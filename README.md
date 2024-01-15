@@ -39,17 +39,27 @@ My website passed validation checks on JSHint JavaScript Validator, W3C HTML Val
 I have completed testing of my website by sharing it with friends and family members to test on their personal devices, and all have reported it as fully functional without any issues. Additionally, I conducted testing using Chrome Dev Tools to assess responsiveness on various screen sizes.
 
 - iPhone 12 Pro
+
   ![iphone 12 responsive image](images/iphone12pro.png)
+
 - Pixel 7
 
    ![pixel 7 responsive image](images/pixel7.png)
+
 - iPad Air
+
   ![ipad air responsive image](images/ipadair.png)
+
 - Surface Duo
+
 ![surface duo resonsive image](images/surfaceduo.png)
+
 - Nest Hub Max
+
   ![nest hub max responsive image](images/nesthubmax.png)
+
 - Macbook Air
+
    ![macbook air responsive image](images/macbookair.png)
 
 ### Responsive Testing
@@ -65,9 +75,16 @@ From the source section drop-down menu, select the Master Branch
 - The live link can be found here - https://seanbyrne5.github.io/bazzinga/
 
 ## Bugs
- I have encountered a number of bugs on this project I was mostly able to fix these bugs as i progressed though my project. 
+ I encountered several bugs during this project, and for the most part, I was able to fix them as I progressed. However, I faced a particular challenge with one bug – loading images into the modal I had created. Although I had learned to create a modal, upon deployment, it resulted in a console error, and the images would not load in the modal.
+  - Example
+
+ ![bug issue](images/modal-bug.png)
+
+ Since this was my first experience with a modal, I accidentally created an absolute file path within the modal, which prevented the images from loading. Once I fixed this issue, the modal worked as I had expected it to.
 
 ### Unfixed Bugs
+
+
 
 ## Credits
 I obtained the color palettes, images, and icons from the website https://www.frontendmentor.io, which offers coding challenges and awards points for completed submissions. When I selected the Rock, Paper, Scissors, Lizard, Spock game challenge, there was a downloadable file with all the SVG images and icons, as well as the specified colors and design layout.

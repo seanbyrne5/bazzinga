@@ -29,7 +29,7 @@ function game() {
         resultElement.querySelector('button').addEventListener('click', tryAgain);
     
     })
-    
+    // This function is called when the page has fulled loaded, ready for the users input
     function startGame() {
         calculateWinner(userChoice, compChoice);
         userChoiceElement.classList.add('hidden');
@@ -38,18 +38,18 @@ function game() {
         buildChoiceElement(true, userChoice);
         buildChoiceElement(false, compChoice);
     }
-    
+    // this function targets the img elements when a user makes a choice
     function getUserChoice(target) {
         if (target.nodeName === 'IMG') {
             return target.parentElement.classList[1];
         }
         return target.classList[1];
     }
-    
+    // this function chooses an otion at rendom to play against the user
     function getComputerChoice() {
         return actions[Math.floor(Math.random() * 5)];
     }
-
+// this function adds and substracts or does nothing when the result of the game is decided
     function calculateWinner(user, comp) {
         if (user === comp) {
             resultTitleElement.innerText = 'Tie';
@@ -65,7 +65,7 @@ function game() {
     function getUserWinsStatus(result) {
         return userWinResults.some(winStr => winStr === result);
     }
-
+// This function replaces the image on the modal section by replacing the class name on the image element using string literals 
     function buildChoiceElement(isItUserElement, className) {
         const el = document.createElement('div');
         el.classList = [`game-card ${className}`];
@@ -76,7 +76,7 @@ function game() {
             pcPickElement.append(el);
         }
     }
-
+// This fucntion hides the modal when a player clicks on the try sgsin button 
     function tryAgain() {
         userChoiceElement.classList.remove('hidden');
         pickedElement.classList.add('hidden');
@@ -97,7 +97,7 @@ function game() {
         currentScore = score;
         updateScoreBoard();
     }
-
+// This function 
     function updateScoreBoard() {
         scoreCountElement.innerText = currentScore;
         window.localStorage.setItem('gameScore', currentScore);
