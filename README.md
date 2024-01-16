@@ -1,5 +1,5 @@
 # Bazzinga!
-![screenshot of main home page](documents/homescreen.png)
+![screenshot of main home page](documents/mainpage.png)
 
 Welcome to my version of the game of Rock, Paper, Scissors, Lizard, Spock. I have given my site the name Bazinga, as an homage to the original creator of this game, Sheldon Cooper. This game is designed using my skills in HTML, CSS, and JavaScript. It aims to provide friends and family members with a game featuring truly random results. It is statistically proven that people who know each other tend to tie when playing the standard Rock, Paper, Scissors game.
 
@@ -9,7 +9,7 @@ I used YouTube resources and GitHub repositories like [Conal2023/RPSLS](https://
 
 ## Features
 ### Title and Scoreboard
-![screenshot of title and scoreboard](documents/title-scoreboard.png)
+![screenshot of title and scoreboard](documents/title-score.png)
 Here, we present the new version of the ever-popular rock-paper-scissors game. This game consists of five options: Rock, Paper, Scissors, Lizard, and Spock. These titles appear beside the hand signs used to represent this game in real life. Opposite this, we have a scoreboard that will add 1 for every time you win and will deduct a number every time you lose; there is no change if you tie.
 
 ### Users Choice 
