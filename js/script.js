@@ -97,7 +97,7 @@ function game() {
         currentScore = score;
         updateScoreBoard();
     }
-// This function 
+ 
     function updateScoreBoard() {
         scoreCountElement.innerText = currentScore;
         window.localStorage.setItem('gameScore', currentScore);
