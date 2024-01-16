@@ -1,4 +1,5 @@
-function game() {
+function game() {// all functions contained within a single function, as resources I used advised
+    // All variables defined here
     const actions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const userWinResults = ['scissorspaper', 'paperrock', 'rocklizard', 'lizardspock', 'spockscissors',
     'rockscissors', 'scissorslizard', 'lizardpaper', 'paperspock', 'spockrock'];
@@ -97,7 +98,6 @@ function game() {
         currentScore = score;
         updateScoreBoard();
     }
- 
     function updateScoreBoard() {
         scoreCountElement.innerText = currentScore;
         window.localStorage.setItem('gameScore', currentScore);

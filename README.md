@@ -33,7 +33,12 @@ Once clicked, this part will open the game rules and explain how the scores are 
 My websites lighthouse score.
 
 ### Validator Testing
-My website passed validation checks on JSHint JavaScript Validator, W3C HTML Validator and W3C CSS Validator (Jigsaw). 
+- HTML
+   - No errors were returned when passing through the official W3C validator
+- CSS
+   - No errors were found when passing through the official (Jigsaw) validator
+- JavaScript
+   - No errors were found when passing through the official Jshint validator
 
 ### Manual Testing
 I have completed testing of my website by sharing it with friends and family members to test on their personal devices, and all have reported it as fully functional without any issues. Additionally, I conducted testing using Chrome Dev Tools to assess responsiveness on various screen sizes.
