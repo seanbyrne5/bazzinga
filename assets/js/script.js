@@ -30,7 +30,9 @@ function game() {// all functions contained within a single function, as resourc
         resultElement.querySelector('button').addEventListener('click', tryAgain);
     
     })
-    // This function is called when the page has fulled loaded, ready for the users input
+    /**
+     * This function is called when the page has fulled loaded, ready for the users input
+     */
     function startGame() {
         calculateWinner(userChoice, compChoice);
         userChoiceElement.classList.add('hidden');
@@ -70,7 +72,7 @@ function game() {// all functions contained within a single function, as resourc
     function buildChoiceElement(isItUserElement, className) {
         const el = document.createElement('div');
         el.classList = [`game-card ${className}`];
-        el.innerHTML = `<img src="images/icon-${className}.svg" alt="${className}">`;
+        el.innerHTML = `<img src="assets/images/icon-${className}.svg" alt="${className}">`;
         if (isItUserElement) {
             userPickElement.append(el);
         } else {
@@ -127,4 +129,6 @@ function game() {// all functions contained within a single function, as resourc
     }
 }
 
-game();
+document.addEventListener("DOMContentLoaded", function () {
+    game();
+});
