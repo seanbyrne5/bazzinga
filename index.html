@@ -3,82 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bazinga is a fun simple game to allow visitors play a game of chance with the great game Rock, Paper, Scissors, Lizard, Spock">
-  <meta name="keyword" content="Bazinga, rock, paper, scissors, lizard, spock, game, chance, fun, entertainment">
+  <meta name="description" content="Bazinga is a fun simple game to allow visitors to play a game of chance with the great game Rock, Paper, Scissors, Lizard, Spock">
+  <meta name="keywords" content="Bazinga, rock, paper, scissors, lizard, spock, game, chance, fun, entertainment">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Bazzinga!</title>
+  <title>Bazinga!</title>
 </head>
 <body>
   <div class="flex-column main-container">
     <!-- Title Section -->
-  <div class="title-block flex-row">
-    <ul>
-      <li><i class="fa-solid fa-hand-back-fist"></i> Rock</li>
-      <li><i class="fa-solid fa-hand"></i> Paper</li>
-      <li><i class="fa-solid fa-hand-scissors"></i> Scissors</li>
-      <li><i class="fa-solid fa-hand-lizard"></i> Lizard</li>
-      <li><i class="fa-solid fa-hand-spock"></i> Spock</li>
-    </ul>
-    <div class="score flex-column">
-      <div class="score-title">Score</div>
-      <div class="score-count"></div>
+    <div class="title-block flex-row">
+      <ul>
+        <li><i class="fa-solid fa-hand-back-fist"></i> Rock</li>
+        <li><i class="fa-solid fa-hand"></i> Paper</li>
+        <li><i class="fa-solid fa-hand-scissors"></i> Scissors</li>
+        <li><i class="fa-solid fa-hand-lizard"></i> Lizard</li>
+        <li><i class="fa-solid fa-hand-spock"></i> Spock</li>
+      </ul>
+      <div class="score flex-column">
+        <div class="score-title">Score</div>
+        <div class="score-count"></div>
+      </div>
+    </div>
+
+    <!-- User Choice Section-->
+    <div class="user-choice">
+      <div class="game-card scissors"><img src="assets/images/icon-rock.svg" alt="Icon of a Rock hand sign" aria-label="Click to choose Rock"></div>
+      <div class="game-card paper"><img src="assets/images/icon-paper.svg" alt="Icon of a Paper hand sign" aria-label="Click to choose Paper"></div>
+      <div class="game-card rock"><img src="assets/images/icon-scissors.svg" alt="Icon of a Scissors hand sign" aria-label="Click to choose Scissors"></div>
+      <div class="game-card lizard"><img src="assets/images/icon-lizard.svg" alt="Icon of a Lizard" aria-label="Click to choose Lizard"></div>
+      <div class="game-card spock"><img src="assets/images/icon-spock.svg" alt="Icon of the Spock hand sign" aria-label="Click to choose Spock"></div>
+    </div>
+
+    <!-- Games Result Section-->
+    <div class="picked flex-row hidden">
+      <div class="choice flex-column">
+        <p>You picked</p>
+        <div class="user-pick"></div>
+      </div>
+      <div class="result">
+        <div class="title">You lose</div>
+        <button aria-label="Click to play another round">Play again</button>
+      </div>   
+      <div class="choice flex-column">
+        <p>The house picked</p>
+        <div class="pc-pick"></div>
+      </div> 
+    </div>
+
+    <button class="rules-btn">Rules</button> 
+    <div class="modal-bg"></div>
+    <div class="modal">
+      <span class="close">
+        <img src="assets/images/icon-close.svg" alt="Close button" aria-label="Click to close the Rules section">
+      </span>
+      <div class="title">Rules</div>
+      <div class="content">
+        <img src="assets/images/image-rules-bonus.svg" alt="Scissors cuts paper, paper covers rock, rock crushes lizard, 
+        lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, 
+        Spock vaporizes rock, and as it always has, rock crushes scissors.">
+      </div>
+    </div>
+
+    <div class="quip">
+      <p>"I'm not crazy; my mother had me tested."</p>
+      <p>- Sheldon Cooper</p>
     </div>
   </div>
 
-  <!-- User Choice Section-->
-  <div class="user-choice">
-    <div class="game-card scissors"><img src="assets/images/icon-rock.svg" alt="Icon of a Rock hand sign" aria-label="Click to chose Rock"></div>
-    <div class="game-card paper"><img src="assets/images/icon-paper.svg" alt="icon of a Paper hand sign" aria-label="Click to choose Paper"></div>
-    <div class="game-card rock"><img src="assets/images/icon-scissors.svg" alt="icon of a Scissors hand sign" aria-label="Click to choose Scissors"></div>
-    <div class="game-card lizard"><img src="assets/images/icon-lizard.svg" alt="icon of a Lizard" aria-label="Click to choose Lizard"></div>
-    <div class="game-card spock"><img src="assets/images/icon-spock.svg" alt="icon of the Spock hand sign" aria-label="Click to choose Spock"></div>
-  </div>
-<!--Games Result Section-->
-  <div class="picked flex-row hidden">
-    <div class="choice flex-column">
-      <p>You picked</p>
-      <div class="user-pick"></div>
-    </div>
-    <div class="result">
-      <div class="title">You lose</div>
-      <button aria-label="Click to play another roubd">Play again</button>
-    </div>   
-    <div class="choice flex-column">
-      <p>The house picked</p>
-      <div class="pc-pick"></div>
-    </div> 
-  </div>
-
-  <button class="rules-btn">Rules</button> 
-  <div class="modal-bg"></div>
-  <div class="modal">
-    <span class="close">
-      <img src="assets/images/icon-close.svg" alt="Close button" aria-label="Click to close the Rules section">
-    </span>
-    <div class="title">Rules</div>
-    <div class="content">
-      <img src="assets/images/image-rules-bonus.svg" alt="Scissors cuts paper, paper covers rock, rock crushes lizard, 
-      lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, 
-      Spock vaporizes rock, and as it always has, rock crushes scissors.">
-    </div>
-  </div>
-
-
-  <div class="quip">
-    <p>"I'm not crazy, my mother had me tested"</p>
-    <p>-Sheldon Cooper</p>
-  </div>
-  </div>
   <script src="assets/js/script.js"></script>
   <script src="https://kit.fontawesome.com/8f4d07cb3e.js" crossorigin="anonymous"></script>
-   <!-- No script error -->
-   <noscript>
+  <!-- No script error -->
+  <noscript>
     <h1>JavaScript Required</h1>
     <p>
-        Your browser either does not support JavaScript, or it is not enabled! If you wish to play this game, then 
-        either change your browser or enable it for the use of JavaScript.
+      Your browser either does not support JavaScript, or it is not enabled! If you wish to play this game, then 
+      either change your browser or enable it for the use of JavaScript.
     </p>
-</noscript>
+  </noscript>
 </body>
 </html>
